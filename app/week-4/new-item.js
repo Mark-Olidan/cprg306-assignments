@@ -14,28 +14,24 @@ export default function NewItem(){
         if (quantity > 1){setQuantity(quantity - 1)}
     };
 
-    let buttonStylesDecrement = "bg-blue-500 mr-2 w-10 rounded-2xl hover:bg-blue-400 transition-colors active:bg-blue-300"
+    let buttonStylesDecrement = "bg-blue-500 mr-2 w-10 rounded-2xl h-8 hover:bg-blue-400 transition-colors active:bg-blue-300"
     if (quantity === 1){
-        buttonStylesDecrement = "bg-gray-400 mr-2 w-10 rounded-2xl cursor-not-allowed"
+        buttonStylesDecrement = "bg-gray-400 mr-2 w-10 rounded-2xl cursor-not-allowed h-8"
     };
 
-    let buttonStylesIncrement = "bg-blue-500 mr-2 w-10 rounded-2xl hover:bg-blue-400 transition-colors active:bg-blue-300"
+    let buttonStylesIncrement = "bg-blue-500 mr-2 w-10 rounded-2xl h-8 hover:bg-blue-400 transition-colors active:bg-blue-300"
     if (quantity === 20){
-        buttonStylesIncrement = "bg-gray-400 mr-2 w-10 rounded-2xl cursor-not-allowed"
+        buttonStylesIncrement = "bg-gray-400 mr-2 w-10 rounded-2xl cursor-not-allowed h-8"
     }
 
     return(
         <main>
-            <div className="flex flex-row max-w-50 justify-center items-center">
-                <div className ="flex-1 bg-white text-center justify-center">
-                    <p className="text-black">{quantity}</p>
-                </div>
-                <div className ="flex-1 bg-white justify-center">
+                <div className ="flex flex-row flex-1 bg-white  justify-center items-center rounded max-w-50 h-10">
+                    <p className="text-black mr-10">{quantity}</p>
                     <button className={buttonStylesDecrement} onClick={decrement}>-</button>
                     <button className={buttonStylesIncrement} onClick={increment}>+</button>
 
                 </div>
-            </div>
         </main>
     )
 
