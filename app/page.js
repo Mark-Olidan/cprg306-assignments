@@ -11,6 +11,7 @@ export default function Home(){
         <li><a className={style} href="./week-5">Week 5 - Controlled Components</a></li>
         <li><a className={style} href="./week-6">Week 6 - Handling Lists</a></li>
         <li><a className={style} href="./week-7">Week 7 - Managing State</a></li>
+        <li><a className={style} href="./week-8">Week 8 - Fetching Data</a></li>
       </ul>
     </main>
   );
