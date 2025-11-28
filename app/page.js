@@ -12,6 +12,8 @@ export default function Home(){
         <li><a className={style} href="./week-6">Week 6 - Handling Lists</a></li>
         <li><a className={style} href="./week-7">Week 7 - Managing State</a></li>
         <li><a className={style} href="./week-8">Week 8 - Fetching Data</a></li>
+        <li><a className={style} href="./week-9">Week 9 - Firebase Authentication</a></li>
+        <li><a className={style} href="./week-10">Week 10 - Shopping List with Firebase</a></li>
       </ul>
     </main>
   );
